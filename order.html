@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="order.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-image: url('images/bottle-and-balls.jpg'); background-size: cover; background-repeat: no-repeat;"> 
+     <div id="container1">
+      <div id="navbar">
+        <div id="barlink"><a href="index.html">HOME</a></div>
+        <div id="barlink"><a href="cremas.html">Crémas</a></div>
+        <div id="barlink"><a href="order.html">Place Order</a></div>
+        <div id="barlink"><a href="about.html">About Férier</a></div>
+        <div id="barlink"><a href="contact.html">Contact Us</a></div>
+      </div>
+    </div>
+
+    <div id="blackbox" style="padding-top: 30px; width:35%; margin: 0 auto; display: block;">
+      <form id="order-form" action="process_order.php" method="post" style="color: #B98580; font-size: 15px; font-family: 'Open Sans'; background-color: #3D2C2A; border: 2px solid #F7B2AA; padding-left: 20px; padding-right: 10px; font-size: 13.5px; border-radius: 5px; padding-bottom: 40px;" multipart/form-data>
+ 
+        <!-- span would not work it is simply to isolate css to a part of an element like a word in a paragraph as opposed to the whole-->
+        <p style="font-size: 28px; text-align: center;"> Order Férier &nbsp </p>
+        <p style="padding-right: 10px;"> 
+        * Please note that we currently distribute only in New York, New Jersey, and Connecticut. Email ferierholiday@yahoo.com to let us know if your location is not covered.
+        </p>
+
+        <div id="field1" style="width: 48%; display: inline-block; margin-bottom: 10px;">
+          <p style="width: 100%; display: block; margin-bottom: 20px; ">First Name</p>
+          <input id="fname" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1;  background-color: #F9C7C1;" type="text" name="fname" required> 
+        </div>
+
+        <div id="field2" style="margin-left: 5px; width: 48%; display: inline-block; margin-bottom: 10px">
+          <p style="width: 100%; display: block; margin-bottom: 20px;">Last Name</p> 
+          <input id="lname" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1; background-color: #F9C7C1;" type="text" name="lname" required>
+        </div>
+
+        <div id="field3" style="width: 48%; display: inline-block; margin-bottom: 10px">
+          <p style="width: 100%; display: block; margin-bottom: 20px;">*Email</p>
+          <input id="email" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1;  background-color: #F9C7C1;" type="textarea" placeholder="   *Email Address" name="email" pattern=".*@{1}.*" required> 
+        </div>
+
+        <div id="field4" style="margin-left: 5px; width: 48%; display: inline-block; margin-bottom: 10px">
+          <p style="width: 100%; display: block; margin-bottom: 20px;">Phone (Optional)</p> 
+          <input id="phone" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1; background-color: #F9C7C1;" type="textarea" name="phone" placeholder="   (XXX)-XXX-XXXX">
+        </div>
+
+        <div id="field5" style="width: 93%; display: block;">
+          <p style="width: 100%; display: block; margin-bottom: 20px;">*Delivery Address</p> 
+          <input id="street_1" style="margin-bottom: 14px; width: 100%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1; background-color: #F9C7C1;" type="textarea" name="street_1" placeholder="   *Street Address" required>
+          <input id="street_2" style="margin-bottom: 14px; width: 100%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1; background-color: #F9C7C1;" type="textarea" name="street_2" placeholder="   Address Line 2">
+        </div>
+
+        <div id="field6" style="width: 48%; display: inline-block; margin-bottom: 14px;">
+          <input id="city" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1;  background-color: #F9C7C1;" type="textarea" placeholder="   *City" name="city" required> 
+        </div>
+
+        <div id="field7" style="margin-left: 5px; width: 48%; display: inline-block; margin-bottom: 14px;">
+          <input id="state" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1; background-color: #F9C7C1;" type="textarea" name="state" placeholder="   *State">
+        </div>
+
+        <div id="field8" style="width: 48%; display: inline-block; margin-bottom: 15px;">
+          <input id="zipcode" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1;  background-color: #F9C7C1;" type="textarea" placeholder="   *Postal / Zip Code" name="zipcode" required> 
+        </div>
+
+        <div id="field9" style="margin-left: 5px; width: 48%; display: inline-block; margin-bottom: 15px;">
+          <input id="country" style="width: 90%; height: 22px; display: block; border-radius: 3px; border: 3px solid #F9C7C1; background-color: #F9C7C1;" type="textarea" name="country" placeholder="   *Country" required>
+        </div>
+
+        <div id="field10" style="width:100%; margin-bottom: 20px; margin: 0 auto;">
+        <p style="width: 49%; display: inline-block; margin-bottom: 20px;">*Quantity</p><p style="text-align: right; width: 49%; margin-bottom: 20px; display: inline-block;">($30.00 per bottle)   &nbsp&nbsp</p> 
+        <input type="number" value="1" name="quantity" min="1" max="10" style="width: 93%; height: 22px; background-color: #F9C7C1; border-radius: 3px; border: 3px solid #F9C7C1; margin-bottom: 20px; display: block;" placeholder="   1, 2, 3 etc" oninput="updateSubmit()" required>
+        </div>
+        <input id="submit" type="submit" style="display:block; background-color: #F7B2AA; border-radius: 3px; border: 3px solid #F7B2AA; height: 40px; width: 120px; margin: 0 auto; color: #6A4D49; font-size: 13px;">
+
+        <!--
+        <script>
+        function updateSubmit() {
+          alert($('#quantity').value);
+          $('#submit').val("Submit ".concat("($30",".00)"));
+        }
+        </script>
+        -->
+
+      </form>
+    </div>
+
+    <div id="music" style="display:none;">
+    <iframe width="300" height="80" scrolling="no" frameborder="no" src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/294186396&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true&show_artwork=true></iframe>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7/js/order.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

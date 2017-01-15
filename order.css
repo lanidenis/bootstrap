@@ -1,0 +1,33 @@
+#submit {
+  background: #F7B2AA; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top,  #F9C7C1, #F7B2AA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #F9C7C1, #F7B2AA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #F9C7C1, #F7B2AA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #F9C7C1, #F7B2AA); /* Standard syntax */
+}
+
+
+/*Set Placeholder Color to Dark Gray */
+::-webkit-input-placeholder { /* Chrome */
+  color: #967874;
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #967874;
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #967874;
+  opacity: 1;
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #967874;
+  opacity: 1;
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+

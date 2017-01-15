@@ -1,0 +1,34 @@
+div#blackbox {
+	position: relative; 
+	border: 9px solid #3D2C2A; 
+	display: block; 
+	width: 72%; height: 80vh; 
+	margin: 0 auto; 
+	margin-top: 20px;
+}
+
+div#blackbox div#container2 {
+	position: relative;
+}
+
+div#blackbox div#container2 p#text {
+	font-family: Avenir; 
+	color: #3D2C2A; 
+	font-size: 17px; 
+	display: block; 
+	margin: 0 auto; 
+	width: 35%; 
+	text-align: center; 
+	font-weight: bold; 
+}
+
+div#blackbox div#container2 p#header {
+	display: block; 
+	margin: 0 auto; 
+	font-family: 'Snell Roundhand';
+	font-size: 72px;
+	font-weight: bold;
+	width: 35%; 
+	text-align: center; 
+	color: #8B0000;
+}
